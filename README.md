@@ -8,10 +8,10 @@ To run a Docker container
 
   Linux agent:
 
-    docker run --init jenkins/inbound-java-aws -url http://jenkins-server:port <secret> <agent name>
+    docker run --init zgr3doo/inbound-java-aws -url http://jenkins-server:port <secret> <agent name>
   Note: `--init` is necessary for correct subprocesses handling (zombie reaping)
 
-    docker run --init jenkins/inbound-java-aws -url http://jenkins-server:port -workDir=/home/jenkins/agent <secret> <agent name>
+    docker run --init zgr3doo/inbound-java-aws -url http://jenkins-server:port -workDir=/home/jenkins/agent <secret> <agent name>
 
 Optional environment variables:
 
